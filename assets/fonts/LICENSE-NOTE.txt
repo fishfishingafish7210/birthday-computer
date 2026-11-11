@@ -1,0 +1,3 @@
+Zpix pixel font by SolidZORO, v3.3.0.
+Source: https://github.com/SolidZORO/zpix-pixel-font
+License: Personal and educational projects are free. Commercial products require a separate license. Font is used without modification for this personal birthday gift website.
