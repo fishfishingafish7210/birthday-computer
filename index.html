@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#286ba7"><title>生日限定电脑 · 小鱼为你定制</title><link rel="stylesheet" href="style.css?v=11">
+</head>
+<body>
+  <div id="boot" class="boot-screen"><svg class="boot-fish" viewBox="0 0 48 26" aria-hidden="true" shape-rendering="crispEdges"><path fill="#91acc4" d="M33 8h4V5h4V2h5v22h-5v-3h-4v-3h-4z"/><path fill="#4e7295" d="M12 3h13v2h5v3h4v3h3v5h-3v3h-4v3h-5v2H12v-2H8v-3H5v-3H2v-5h3V8h3V5h4z"/><path fill="#88a8c6" d="M12 6h13v2h5v3h4v5h-4v3h-5v2H12v-2H8v-3H5v-5h3V8h4z"/><path fill="#e5f2ff" d="M12 8h12v2H12zM8 11h6v5H8z"/><path fill="#31577a" d="M9 12h3v3H9zM20 14h4v2h-4z"/></svg><p>哦！寿星来了！(｡ì _ í｡)<br>记得打开全屏玩哦！</p><div class="boot-track"><i></i></div></div>
+  <main id="desktop" class="desktop hidden" inert>
+    <div class="xp-top"><div class="top-links"><span>My Computer</span><span>My Network Place</span><span>My Documents</span></div><div class="top-tools"><button class="toolbar-icon" data-open="photos" aria-label="我的电脑"><img src="assets/icons/computer.svg" alt=""></button><button class="toolbar-icon" data-open="photos" aria-label="浏览相册"><img src="assets/icons/explorer.svg" alt=""></button><button class="toolbar-icon" data-open="letter" aria-label="写给你们的话"><img src="assets/icons/mail.svg" alt=""></button><button class="toolbar-icon" data-open="music" aria-label="音乐播放器"><img src="assets/icons/media.svg" alt=""></button><button class="toolbar-icon toolbar-close" aria-label="打开欢迎窗口" id="openWelcome"><img src="assets/icons/close.svg" alt=""></button></div></div>
+    <div class="sky"></div><div class="hills"><div class="hill-back"></div><div class="hill-front"></div></div><div class="xp-logo"><small>Microsoft</small><b><i>▰</i> Windows.</b><strong>msn</strong><small>Birthday Edition</small></div>
+    <div class="desktop-shortcuts" aria-label="桌面软件">
+      <button class="shortcut" data-app="music"><img src="assets/icons/music.svg" alt=""><span>音乐</span></button>
+      <button class="shortcut" data-app="photos"><img src="assets/icons/photo.svg" alt=""><span>照片</span></button>
+      <button class="shortcut" data-app="quiz"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M7 24c6-11 21-13 29-5l7-5v20l-7-5C28 38 13 35 7 24z" fill="#76c9d9" stroke="#17415c" stroke-width="2"/><circle cx="16" cy="21" r="2" fill="#102e45"/><path d="M24 17l5 7-5 7" fill="none" stroke="#e8ffff" stroke-width="2"/><path d="M29 8h12v11" fill="none" stroke="#bd9d32" stroke-width="3"/><circle cx="40" cy="8" r="4" fill="#ffe26d" stroke="#594d2f"/></svg><span>快问快答</span></button>
+      <button class="shortcut" data-app="letter"><img src="assets/icons/letter.svg" alt=""><span>写给你们的话</span></button>
+      <button class="shortcut hidden" data-app="cake"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 26q16-10 32 0v14H8z" fill="#f5f2e6" stroke="#4c5963" stroke-width="2"/><path d="M8 26q8 6 16 0t16 0" fill="none" stroke="#c25669" stroke-width="4"/><path d="M13 21h22v6H13z" fill="#9dc4dc" stroke="#4c5963"/><path d="M17 14v7m7-9v9m7-7v7" stroke="#3e4750" stroke-width="2"/><path d="M17 10q-3-4 0-6m7 4q-3-4 0-6m7 4q-3-4 0-6" fill="none" stroke="#ffaf37" stroke-width="2"/></svg><span>吃蛋糕吧</span></button>
+    </div>
+    <aside class="msn-panel"><div class="msn-home">msn Home<br><small>My msn</small></div><h2>★ Favorites</h2><div class="panel-item">▣　电子邮件</div><div class="panel-item">◉　照片</div><div class="panel-item">♫　音乐</div><div class="panel-item">♟　聊天</div><div class="panel-item">☼　生日记忆</div><button class="more-button">更多惊喜　›</button></aside>
+    <div class="desktop-date"><span id="weekday">星期日</span><span class="date-divider">/</span>生日限定</div>
+    <div class="taskbar"><button class="start-button"><span>⊞</span> 开始</button><button class="task-pill" id="openGuide" aria-label="打开生日限定电脑操作指南">▣　生日限定电脑</button><div class="tray">◖ ◉ ▣ <span id="clock"></span></div></div>
+  </main>
+  <dialog id="birthdayGuide" class="birthday-guide" aria-labelledby="guideTitle" aria-describedby="guideContent"><header class="app-titlebar"><span id="guideWindowTitle"></span><button type="button" id="closeGuide" aria-label="关闭引导">×</button></header><div class="birthday-guide-body"><h2 id="guideTitle"></h2><div id="guideContent"></div><button class="xp-button" type="button" id="guideOkay">知道了！</button></div></dialog>
+  <dialog id="appWindow" class="app-window"><header class="app-titlebar"><span id="appTitle"></span><div><button class="minimize" aria-label="最小化">_</button><button class="app-close" aria-label="关闭">×</button></div></header><div id="appBody" class="app-body"></div></dialog>
+  <script src="quiz.js?v=10"></script><script src="albums-data.js?v=9"></script><script src="albums.js?v=9"></script><script src="letter-data.js"></script><script src="postal.js"></script><script src="letter.js"></script><script src="certificate.js"></script><script src="finale.js"></script><script src="cake.js"></script><script src="guide.js"></script><script src="app.js?v=9"></script>
+</body></html>
